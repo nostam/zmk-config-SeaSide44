@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: nostam
@@ -14,8 +12,8 @@ manifest:
       revision: v0.3
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: zmk-0.3
+      remote: nostam
+      revision: pm
     - name: zmk-behavior-sensor-attr-cycle
       remote: nostam
       revision: central
