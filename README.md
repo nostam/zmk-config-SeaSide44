@@ -20,3 +20,7 @@ Seeed XIAO BLE nRF52840というマイコンとZMKファームウェアを使用
 
 このリポジトリは、SeaSideXを右手トラックボール版のKeyball44で使用するためのファームウェアを提供しています。<br>
 ビルドガイドを参照に、使用するモデルに合ったファームウェアを使用してください。
+
+# Keymap
+
+![SeaSide44 keymap](keymap-drawer/SeaSide44.svg)

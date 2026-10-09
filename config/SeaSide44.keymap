@@ -39,7 +39,7 @@
             #binding-cells = <2>;
             bindings = <&meta_tap>, <&kp>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
         };
     };
 
@@ -100,8 +100,8 @@
             display-name = "Mouse";
             bindings = <
 &trans  &bt BT_SEL 0  &none        &bt BT_CLR  &none   &none                &trans     &trans    &trans     &trans    &trans    &trans
-&trans  &bt BT_SEL 1  &none        &cpi 1      &none   &none                &mkp MB4   &mkp MB1  &trans     &mkp MB2  &mkp MB5  &trans
-&trans  &bt BT_SEL 2  &none        &cpi 7      &none   &kp PSCRN            &kp PSCRN  &mkp MB3  &tog GAME  &trans    &trans    &trans
+&trans  &bt BT_SEL 1  &none        &none       &none   &cpi 1               &mkp MB4   &mkp MB1  &trans     &mkp MB2  &mkp MB5  &trans
+&trans  &bt BT_SEL 2  &none        &none       &none   &cpi 7               &kp PSCRN  &mkp MB3  &tog GAME  &trans    &trans    &trans
                       &trans       &bootloader &trans  &trans     &none     &none      &trans                                     &bootloader
             >;
         };
