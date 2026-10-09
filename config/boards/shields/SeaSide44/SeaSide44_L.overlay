@@ -1,5 +1,14 @@
 #include "SeaSide44.dtsi"
 
+/ {
+    behaviors {
+        cpi: cpi {
+            compatible = "zmk,behavior-key-press";
+            #binding-cells = <1>;
+        };
+    };
+};
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>

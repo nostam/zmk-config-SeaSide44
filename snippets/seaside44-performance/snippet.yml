@@ -1,0 +1,3 @@
+name: seaside44-performance
+append:
+  EXTRA_DTC_OVERLAY_FILE: performance.overlay

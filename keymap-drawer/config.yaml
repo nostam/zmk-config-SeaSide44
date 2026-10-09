@@ -1,0 +1,77 @@
+draw_config:
+  key_w: 64.0
+  key_h: 58.0
+  split_gap: 40.0
+  n_columns: 2
+  dark_mode: auto
+  draw_key_sides: true
+  append_colon_to_layer_header: false
+parse_config:
+  mark_alternate_layer_activators: true
+  trans_legend:
+    t: ▽
+    type: trans
+  raw_binding_map:
+    "&meta_esc 0 ESC":
+      t: Esc
+      h: Meta tap
+    "&cpi 1": CPI +
+    "&cpi 7": CPI −
+    "&bootloader": Boot
+    "&mkp MB1": L Click
+    "&mkp MB2": R Click
+    "&mkp MB3": M Click
+    "&mkp MB4": Back
+    "&mkp MB5": Fwd
+  zmk_keycode_map:
+    TAB: ⇥ Tab
+    ESC: Esc
+    DEL: ⌦ Del
+    BSPC: ⌫ Bksp
+    RET: ⏎
+    SPACE: ␣
+    LSHFT: ⇧ Shift
+    RSHFT: ⇧ Shift
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    LANG1: Lang1
+    INS: Ins
+    PSCRN: PrtSc
+    SEMI: ;
+    SQT: "'"
+    COMMA: ","
+    DOT: .
+    FSLH: /
+    BSLH: \
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: $
+    PRCNT: "%"
+    CARET: ^
+    AMPS: "&"
+    STAR: "*"
+    PLUS: +
+    MINUS: "-"
+    UNDER: _
+    EQUAL: "="
+    COLON: ":"
+    GRAVE: "`"
+    TILDE: "~"
+    PIPE: "|"
+    QMARK: "?"
+    LT: <
+    GT: ">"
+    LPAR: (
+    RPAR: )
+    LBKT: "["
+    RBKT: "]"
+    LBRC: "{"
+    RBRC: "}"
+    LEFT: ←
+    DOWN: ↓
+    UP: ↑
+    RIGHT: →
+    PG_UP: PgUp
+    PG_DN: PgDn

@@ -25,13 +25,31 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        // input-processors = <&zip_temp_layer 1 600>;
 
         scroller {
             layers = <5>;
             input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 1 12 &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
         };
     };
+
+    behaviors {
+        cpi: cpi {
+            compatible = "zmk,behavior-sensor-attr-cycle";
+            label = "CPI";
+            #binding-cells = <1>;
+            sensor_device = <&trackball>;
+            attr = <0>;
+            values = <600 800 1000 1200 1400 1600 200 400>;
+            persistant;
+            load_delay = <3000>;
+        };
+    };
 };
+
+// &zip_temp_layer {
+//     excluded-positions = <18 19 21 22 31>;
+// };
 
 /* SPI 設定 */
 &pinctrl {
@@ -78,6 +96,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+        force-awake;
     };
 };
 
