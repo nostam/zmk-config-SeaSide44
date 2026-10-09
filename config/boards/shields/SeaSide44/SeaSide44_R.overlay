@@ -1,4 +1,7 @@
 #include "SeaSide44.dtsi"
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <6>;
@@ -23,6 +26,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        scroller {
+            layers = <5>;
+            input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 1 12 &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+        };
     };
 };
 
@@ -65,7 +72,12 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         // automouse-layer = <4>; //ここをコメントアウトするとオートマウスレイヤーがオフになる
-        scroll-layers = <5>;
+        // scroll-layers = <5>;
+        cpi = <600>;
+        invert-y;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
     };
 };
 
