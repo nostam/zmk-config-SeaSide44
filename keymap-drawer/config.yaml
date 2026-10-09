@@ -12,29 +12,33 @@ parse_config:
     t: ▽
     type: trans
   raw_binding_map:
-    "&meta_esc 0 ESC":
-      t: Esc
-      h: Meta tap
     "&cpi 1": CPI +
-    "&cpi 7": CPI −
+    "&cpi (-1)": CPI −
+    "&cpi 0": CPI reset
+    "&swapper": Alt+Tab
+    "&swapper_back": Alt+Shift+Tab
     "&bootloader": Boot
-    "&mkp MB1": L Click
-    "&mkp MB2": R Click
-    "&mkp MB3": M Click
+    "&mkp MB1": MBL
+    "&drag_click":
+      t: MBL
+      h: drag
+    "&mkp MB2": MBR
+    "&mkp MB3": MBM
     "&mkp MB4": Back
     "&mkp MB5": Fwd
   zmk_keycode_map:
-    TAB: ⇥ Tab
+    TAB: Tab
     ESC: Esc
-    DEL: ⌦ Del
-    BSPC: ⌫ Bksp
-    RET: ⏎
-    SPACE: ␣
-    LSHFT: ⇧ Shift
-    RSHFT: ⇧ Shift
+    DEL: Del
+    BSPC: Bksp
+    RET: Enter
+    SPACE: Space
+    LSHFT: Shift
+    RSHFT: Shift
     LCTRL: Ctrl
     RCTRL: Ctrl
     LALT: Alt
+    LGUI: Meta
     LANG1: Lang1
     INS: Ins
     PSCRN: PrtSc

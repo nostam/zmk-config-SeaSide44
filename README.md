@@ -23,4 +23,4 @@ Seeed XIAO BLE nRF52840というマイコンとZMKファームウェアを使用
 
 # Keymap
 
-![SeaSide44 keymap](keymap-drawer/SeaSide44.svg)
+![SeaSide44 keymap](keymap-drawer/SeaSide44.webp)

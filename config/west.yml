@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/nostam
     - name: oleksandrmaslov
       url-base: https://github.com/oleksandrmaslov
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -21,7 +23,13 @@ manifest:
       revision: central
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
-      revision: main
+      revision: 0da8f97f8f2abb18fcc9d488b25357511922cf32
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: 62a669c32353576df18d6f835ccb2133e2238e1d
+    - name: zmk-smart-toggle
+      remote: caksoylar
+      revision: 46e178221cccef965a511b772d7bc62800f1542e
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
