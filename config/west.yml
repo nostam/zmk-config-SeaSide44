@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: nostam
       url-base: https://github.com/nostam
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,6 +19,9 @@ manifest:
     - name: zmk-behavior-sensor-attr-cycle
       remote: nostam
       revision: central
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
