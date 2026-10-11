@@ -3,6 +3,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/input_transform.h>
 #include <scroll-snap.dtsi>
+#include <input/processors/report_rate_limit.dtsi>
 
 &zip_scroll_snap {
     x-threshold = <9 20>;
@@ -45,21 +46,21 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_xy_scaler 1 4>;
+        input-processors = <&zip_xy_scaler 1 4 &zip_ble_report_rate_limit 8>;
 
         dragger {
             layers = <7>;
-            input-processors = <&zip_xy_scaler 1 4>;
+            input-processors = <&zip_xy_scaler 1 4 &zip_ble_report_rate_limit 8>;
         };
 
         free_scroller {
             layers = <6>;
-            input-processors = <&scroll_accel &zip_xy_to_scroll_mapper &zip_scroll_scaler 1 32 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+            input-processors = <&scroll_accel &zip_xy_to_scroll_mapper &zip_scroll_scaler 1 32 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT &zip_ble_report_rate_limit 8>;
         };
 
         scroller {
             layers = <4>;
-            input-processors = <&scroll_accel &zip_xy_to_scroll_mapper &zip_scroll_snap &zip_scroll_scaler 1 32 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+            input-processors = <&scroll_accel &zip_xy_to_scroll_mapper &zip_scroll_snap &zip_scroll_scaler 1 32 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT &zip_ble_report_rate_limit 8>;
         };
     };
 

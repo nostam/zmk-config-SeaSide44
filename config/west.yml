@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/oleksandrmaslov
     - name: kot149
       url-base: https://github.com/kot149
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,6 +32,9 @@ manifest:
     - name: zmk-smart-toggle
       remote: caksoylar
       revision: 46e178221cccef965a511b772d7bc62800f1542e
+    - name: zmk-input-processor-report-rate-limit
+      remote: badjeff
+      revision: f43f37aae7aaa7bf0ec4d432683b873a7e3a8efa
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
