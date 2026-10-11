@@ -334,8 +334,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(203, 203)" class="key keypos-37">
 <rect rx="6" ry="6" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-25" width="42" height="42" class="key"/>
-<text x="0" y="-4" class="key tap">Ctl+B</text>
-<text x="0" y="25" class="key hold">Alt</text>
+<text x="0" y="-4" class="key tap">Alt</text>
 </g>
 <g transform="translate(276, 224)" class="key keypos-38">
 <rect rx="6" ry="6" x="-27" y="-27" width="54" height="54" class="key side"/>

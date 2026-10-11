@@ -52,16 +52,6 @@
             hold-while-undecided;
         };
 
-        alt_cb: alt_cb {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALT_CB";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-        };
-
         swapper: swapper {
             compatible = "zmk,behavior-smart-toggle";
             label = "SWAPPER";
@@ -170,7 +160,7 @@
 &kp TAB             &kp Q     &kp W     &kp E      &kp R          &kp T                    &kp Y      &kp U       &kp I        &kp O    &kp P           &kp DEL
 &lt SYM ESC         &kp A     &kp S     &kp D      &kp F          &kp G                    &kp H      &kp J       &mouse_k MOUSE K &kp L    &lt SYM SEMI    &kp SQT
 &kp LSHFT           &kp Z     &kp X     &kp C      &kp V          &kp B                    &kp N      &kp M       &kp COMMA    &kp DOT  &kp FSLH        &kp BSPC
-                    &lt MOUSE INS  &alt_cb LALT LC(B)  &kp LCTRL  &lt LOWER SPACE  &kp LGUI     &kp RSHFT  &lt LOWER RET                                   &kp RCTRL
+                    &lt MOUSE INS  &kp LALT  &kp LCTRL  &lt LOWER SPACE  &kp LGUI     &kp RSHFT  &lt LOWER RET                                   &kp RCTRL
             >;
         };
 
